@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin: 0;
+    flex-direction: column;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.team-fouls {
+    padding: 20px;
+    background-color: rgba(101, 115, 81, 0.136);
+    border-radius: 20px;
+    font-size: 70px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: rgb(200, 233, 239);
+    
+}
+
+.team-name {
+    font-size: 80px ;
+    font-weight: bold;
+    color: rgb(48, 194, 219);
+}
+
+.team-score {
+    font-size: 144px;
+    font-weight: bold;
+    color: rgb(200, 233, 239);
+}
+
+
+.timer button {
+    margin: 10px;
+    font-size: 70px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #2665b1;
+    color: rgb(2, 1, 1);
+    border: none;
+    cursor: pointer;
+}
+
+.timer button:hover {
+    background-color: #45a049;
+}
+/* ... previous CSS code ... */
+
+.timer {
+    margin-top: 30px;
+    font-size: 144px; /* Four times bigger */
+    font-weight: bold;
+    color: red; /* Set the font color to red */
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-image: url("background.jpg"); /* Set the background image path */
+    background-size: cover; /* Make the background image cover the entire body */
+    background-position: center; /* Center the background image */
+    background-repeat: repeat; /* Prevent the background image from repeating */
+}
+
+.winner {
+    border: 100px solid gold;
+
+    }
+    
+.possession {
+    padding: 10px;
+    background-color: rgba(101, 115, 81, 0.368);
+    border-radius: 20px;
+    font-size: 30x;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: rgb(200, 233, 239);
+    width: 220px;
+    
+    
+
+}

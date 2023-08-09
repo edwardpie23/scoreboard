@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    
+    <audio id="buzzerAudio" src="buzzer.mp3"></audio>
+    <audio id="basket_Sound" src="basket.mp3"></audio>
+
+    <div class="possession">
+        <div class="possession" id="possession">
+         <button style="font-size: 20px" onclick="togglePossession()">Toggle Possession</button>
+         <p id="possessionDisplay">Possession: <span id="currentPossession">Game Not Started</span></p>
+        </div>
+    </div>
+    <div class="scoreboard">
+        <div class="team" id="team1">
+            <span class="team-name">Reservations</span>
+        </div>
+        <div class="team" id="team2">
+            <span class="team-name">House Keeping</span>
+            
+        </div>
+    </div>
+   
+
+<body>
+    <div class="scoreboard">
+        <div class="team" id="team1">   
+            <span class="team-score" id="team1-score">0</span>
+            
+        </div>
+        <div class="team" id="team2">
+            <span class="team-score" id="team2-score">0</span>
+            
+        </div>
+    </div>
+
+
+   
+
+
+
+<body>
+    
+    <div class="scoreboard">
+        <div class="team" id="team1">
+            <button style="font-size: 40px" onclick="updateScore(1, 1)">+1</button>
+            <button style="font-size: 40px" onclick="updateScore(1, 2)">+2</button>
+            <button style="font-size: 40px" onclick="updateScore(1, 3)">+3</button>
+            <button style="font-size: 40px" onclick="removeScore(1, 1)">-1</button>
+        </div>
+        <div class="team" id="team2">
+           
+            <button style="font-size: 40px" onclick="updateScore(2, 1)">+1</button>
+            <button style="font-size: 40px" onclick="updateScore(2, 2)">+2</button>
+            <button style="font-size: 40px" onclick="updateScore(2, 3)">+3</button>
+            <button style="font-size: 40px" onclick="removeScore(2, 1)">-1</button>
+        </div>
+    </div>
+ 
+
+<body>
+    <div class="scoreboard">
+        <div class="team-fouls" id="team1">
+            <div class="team-fouls" id="team1-fouls">Fouls: 0</div>
+            <button style="font-size: 40px" onclick="recordFoul(1)">Record Foul</button>
+            <button style="font-size: 40px" onclick="removeFoul(1)">Remove Foul</button>
+        </div>
+        <div class="team-fouls" id="team2">
+            <div class="team-fouls" id="team2-fouls">Fouls: 0</div>
+            <button style="font-size: 40px" onclick="recordFoul(2)">Record Foul</button>
+            <button style="font-size: 40px" onclick="removeFoul(2)">Remove Foul</button>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+</body>
+</html>
+
+
+  <div class="scoreboard">
+    </div>
+
+    <div class="timer">
+        <span id="minutes">12</span>:<span id="seconds">00.00</span>
+    <br>
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+        <button onclick="addSeconds(10)">+10s</button>
+        <button onclick="removeSeconds(60)">-9s</button>
+    </div>
+
+   
+   <script src="script.js"></script>
+</body>
+</html>
+
+
