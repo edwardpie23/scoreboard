@@ -28,6 +28,27 @@ document.addEventListener('keydown', function (event) {
         playSound(basketSound);
     }
 });
+// Function to remove points from team scores
+function removeScore(team, points) {
+    if (team === 1 && team1Score >= points) {
+        team1Score -= points;
+        document.getElementById("team1-score").textContent = team1Score;
+    } else if (team === 2 && team2Score >= points) {
+        team2Score -= points;
+        document.getElementById("team2-score").textContent = team2Score;
+    }
+}
+
+// Event listener for keydown event
+document.addEventListener("keydown", function(event) {
+    if (event.ctrlKey) {
+        if (event.key === "ArrowLeft") {
+            removeScore(1, 1); // Remove 1 point from Team 1
+        } else if (event.key === "ArrowRight") {
+            removeScore(2, 1); // Remove 1 point from Team 2
+        }
+    }
+});
 
 function playSound(audioElement) {
   audioElement.currentTime = 0;
